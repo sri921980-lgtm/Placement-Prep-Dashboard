@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Preparation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🚀 Placement Preparation Dashboard</h1>
+
+        <div class="card">
+            <h2>Overall Goals</h2>
+            <p>DSA Target: 500 Problems</p>
+            <p>Aptitude Target: 300 Questions</p>
+            <p>Certification Target: 10 Certificates</p>
+        </div>
+
+        <div class="card">
+            <h2>DSA Progress</h2>
+
+            <input type="number" id="dsaCount" placeholder="Problems Solved">
+            <button onclick="saveDSA()">Save</button>
+
+            <p id="dsaDisplay">Problems Solved: 0</p>
+
+            <progress id="dsaProgress" value="0" max="500"></progress>
+        </div>
+
+        <div class="card">
+            <h2>Aptitude Progress</h2>
+
+            <input type="number" id="aptitudeCount" placeholder="Questions Solved">
+            <button onclick="saveAptitude()">Save</button>
+
+            <p id="aptitudeDisplay">Questions Solved: 0</p>
+        </div>
+
+        <div class="card">
+            <h2>Certification Progress</h2>
+
+            <input type="number" id="certCount" placeholder="Certificates Completed">
+            <button onclick="saveCert()">Save</button>
+
+            <p id="certDisplay">Certificates Completed: 0</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
